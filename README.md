@@ -1,7 +1,11 @@
 # YouTube-Data-Analysis-System
 
 ## 1.Introduction and Background:  
-This project embarks on a dual mission to revolutionize the YouTube landscape. Firstly, it endeavors to create an intuitive and comprehensive dashboard designed to streamline the onboarding process for aspiring YouTube creators. The primary aim is to empower new creators to navigate their content creation journey effortlessly, optimizing both the quality of their content and revenue potential. This user-friendly environment seeks to foster a vibrant community of digital producers who can navigate YouTube's intricacies with ease, unlocking their creative potential. Simultaneously, the project addresses the strategic challenge of identifying trending content on YouTube by developing mechanisms to analyze emerging trends. This facilitates advertisers in strategically positioning their advertisements to reach the widest and most relevant audience, creating a symbiotic relationship that enhances the overall advertising experience on YouTube for both content creators and advertisers.
+This project embarks on a dual mission to revolutionize the YouTube landscape.  
+
+Firstly, it endeavors to create an intuitive and comprehensive dashboard designed to streamline the onboarding process for aspiring YouTube creators. The primary aim is to empower new creators to navigate their content creation journey effortlessly, optimizing both the quality of their content and revenue potential. This user-friendly environment seeks to foster a vibrant community of digital producers who can navigate YouTube's intricacies with ease, unlocking their creative potential.  
+
+Simultaneously, the project addresses the strategic challenge of identifying trending content on YouTube by developing mechanisms to analyze emerging trends. This facilitates advertisers in strategically positioning their advertisements to reach the widest and most relevant audience, creating a symbiotic relationship that enhances the overall advertising experience on YouTube for both content creators and advertisers.
 
 ## 2. Objective:  
 The objective of this project is to develop a system for analyzing YouTube data to answer two questions:  
@@ -9,7 +13,7 @@ The objective of this project is to develop a system for analyzing YouTube data 
 * How can we identify trending content on YouTube to strategically position advertisements, ensuring advertisers reach the widest and most relevant audience?  
 ## 3. System Architecture:
 ### 3.1Project Flow Chart
-<img width="500" alt="image" src="https://github.com/Traumia/YouTube-Data-Analysis-System/assets/57136475/93999e11-6a3e-439c-a78e-775ca42650b6">
+<img width="800" alt="image" src="https://github.com/Traumia/YouTube-Data-Analysis-System/assets/57136475/93999e11-6a3e-439c-a78e-775ca42650b6">
 
 We developed a pipeline to load unstructured YouTube Data into AWS S3, then harnessed AWS Data Wrangler based on Python for data wrangling. The refined data was subsequently loaded into Amazon Redshift by building AWS Glue pipeline, ensuring data integrity and readiness for advanced querying and analytics. AWS SageMaker and AWS Athena will be used for Machine Learning and Analysis. AWS QuickSight will be used for the Visualization.
 ### 3.2 About the dataset:
@@ -29,7 +33,7 @@ This report presents a comprehensive analysis of YouTube data, employing Amazon 
 ### 4.3 Data Analysis and Insights:
 Visualizations and dashboard were created in AWS QuickSight
 
- <img width="500" alt="image" src="https://github.com/Traumia/YouTube-Data-Analysis-System/assets/57136475/66ada0b8-0078-47cd-a83c-d0f189bc7725">
+ <img width="800" alt="image" src="https://github.com/Traumia/YouTube-Data-Analysis-System/assets/57136475/66ada0b8-0078-47cd-a83c-d0f189bc7725">
  
 ## 5.Results:
 ### 5.1 Understanding the relationship between likes and View
@@ -49,16 +53,16 @@ A closer examination of popular YouTube channels reveals intriguing patterns, wi
 ## 6. Discussion and Improvement:
 Upon analyzing the YouTube data, we found several key trends regarding viewer engagement, content popularity, and effective monetization strategies. Our machine learning models, built and deployed using Amazon SageMaker, identified patterns that can predict video popularity, viewer retention rates, and potential advertisement success.
 
-### Recommendations for YouTube Creators:
+#### Recommendations for YouTube Creators:
 Focus on creating content in trending niches as identified by our analysis.
 Utilize SEO strategies for video titles and descriptions to improve discoverability.
 Engage with the community to increase viewer retention and loyalty.
 
-### Recommendations for Advertisers:
+#### Recommendations for Advertisers:
 Target advertisements on videos within trending categories to maximize reach.
 Align ad placements with peak engagement times deduced from our analytics.
 Collaborate with creators who have a high engagement rate for branded content.
 Improvements in the future:
-•	Use Data from various sources to make our training data more reliable
-•	Implement a real-time data analytics pipeline to provide up-to-date insights for content creators and advertisers.
-•	Experiment with advanced machine learning algorithms, including deep learning, to better understand and predict the nuances of user engagement.
+*	Use Data from various sources to make our training data more reliable
+*	Implement a real-time data analytics pipeline to provide up-to-date insights for content creators and advertisers.
+*	Experiment with advanced machine learning algorithms, including deep learning, to better understand and predict the nuances of user engagement.
